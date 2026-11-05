@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-05T04:01:12.280Z",
+  "note": "Browser back/forward behavior characterization; same URL may preserve iframe session entries without updating the top-level URL.",
+  "observations": [
+    {
+      "browser": "chromium",
+      "initialTopUrl": "http://127.0.0.1:62773/harness?variant=safe",
+      "finalTopUrl": "http://127.0.0.1:62773/harness?variant=safe",
+      "before": "twointeractive control",
+      "afterBack": "oneinteractive control",
+      "afterForward": "twointeractive control",
+      "error": null
+    },
+    {
+      "browser": "firefox",
+      "initialTopUrl": "http://127.0.0.1:62773/harness?variant=safe",
+      "finalTopUrl": "http://127.0.0.1:62773/harness?variant=safe",
+      "before": "twointeractive control",
+      "afterBack": "oneinteractive control",
+      "afterForward": "twointeractive control",
+      "error": null
+    },
+    {
+      "browser": "webkit",
+      "initialTopUrl": "http://127.0.0.1:62773/harness?variant=safe",
+      "finalTopUrl": "http://127.0.0.1:62773/harness?variant=safe",
+      "before": "twointeractive control",
+      "afterBack": "oneinteractive control",
+      "afterForward": "twointeractive control",
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+import fs from 'node:fs';
+import {chromium} from 'playwright';
+import {startServer} from '../tools/server.mjs';
+const s=await startServer(0),b=await chromium.launch({channel:'chrome',headless:true});
+const data={date:new Date().toISOString(),browser:b.version(),riskEvidence:{}};
+try{
+ const p=await b.newPage();
+ await p.goto(s.base+'/harness?variant=safe');
+ await p.evaluate(url=>{document.querySelector('iframe[name=htmz]').src=url+'/probe#slot'},s.base);
+ await p.waitForFunction(()=>document.body.dataset.securityProbe==='executed');
+ data.riskEvidence.activeSameOriginHTML={observed:true,detail:'An inline script inside the loaded same-origin iframe can access the parent document before DOM transplantation. Trust boundary exists regardless of selector guard.'};
+ await p.goto(s.base+'/harness?variant=safe');
+ await p.evaluate(()=>{const slot=document.querySelector('#slot');slot.innerHTML='<input id="inside-focus">';document.querySelector('#inside-focus').focus();});
+ const was=await p.evaluate(()=>document.activeElement.id);
+ await p.evaluate(url=>{document.querySelector('iframe[name=htmz]').src=url+'/frag?name=focus-probe#slot'},s.base);
+ await p.waitForFunction(()=>document.querySelector('#slot')?.textContent.includes('focus-probe'));
+ data.riskEvidence.focusOnReplacedNode={before:was,after:await p.evaluate(()=>document.activeElement.id),detail:'The replaced focused element is removed; focus requires application-level management.'};
+ await p.goto(s.base+'/harness?variant=safe');
+ await p.evaluate(()=>{let duplicate=document.createElement('div');duplicate.id='slot';duplicate.textContent='SECOND-DUPLICATE';document.body.append(duplicate);});
+ await p.evaluate(url=>{document.querySelector('iframe[name=htmz]').src=url+'/frag?name=duplicate-probe#slot'},s.base);
+ await p.waitForFunction(()=>document.querySelector('#slot')?.textContent.includes('duplicate-probe'));
+ data.riskEvidence.duplicateIDs={count:await p.locator('#slot').count(),texts:await p.locator('#slot').allTextContents(),detail:'First matched target is replaced; duplicate IDs remain ambiguous.'};
+ await p.goto(s.base+'/csp');
+ await p.evaluate(url=>{document.querySelector('iframe[name=htmz]').src=url+'/frag?name=csp-probe#slot'},s.base);
+ await p.waitForTimeout(280);
+ data.riskEvidence.cspInlineHandler={originalSlotText:await p.locator('#slot').innerText(),detail:'Inline iframe onload is blocked by strict script-src self policy without unsafe-inline, nonce or hash.'};
+ await p.close();
+}finally{await b.close();await s.close();}
+fs.writeFileSync('evidence/security-probes.json',JSON.stringify(data,null,2)+'\n');
+console.log(JSON.stringify(data,null,2));

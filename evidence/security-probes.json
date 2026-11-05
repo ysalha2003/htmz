@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-05T04:07:41.780Z",
+  "browser": "140.0.7339.208",
+  "riskEvidence": {
+    "activeSameOriginHTML": {
+      "observed": true,
+      "detail": "An inline script inside the loaded same-origin iframe can access the parent document before DOM transplantation. Trust boundary exists regardless of selector guard."
+    },
+    "focusOnReplacedNode": {
+      "before": "inside-focus",
+      "after": "",
+      "detail": "The replaced focused element is removed; focus requires application-level management."
+    },
+    "duplicateIDs": {
+      "count": 2,
+      "texts": [
+        "duplicate-probeinteractive control",
+        "SECOND-DUPLICATE"
+      ],
+      "detail": "First matched target is replaced; duplicate IDs remain ambiguous."
+    },
+    "cspInlineHandler": {
+      "originalSlotText": "CSP",
+      "detail": "Inline iframe onload is blocked by strict script-src self policy without unsafe-inline, nonce or hash."
+    }
+  }
+}
