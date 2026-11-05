@@ -1,0 +1,42 @@
+import {chromium} from 'playwright';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {startServer} from '../tools/server.mjs';
+const s=await startServer(0);let browser;const findings=[];
+try{
+ browser=await chromium.launch({channel:'chrome',headless:true});
+ const page=await browser.newPage({viewport:{width:1280,height:850},deviceScaleFactor:1});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(s.base+'/demo?variant=safe');
+ assert.match(await page.locator('h1').innerText(),/إدارة المشاريع/);findings.push('main page');
+ await page.locator('#project-list a[href*="p2"]').click();
+ await page.waitForFunction(()=>document.querySelector('#project-detail h2')?.textContent.includes('تجديد'));
+ findings.push('project detail');
+ await page.locator('.tabs a[href*="kind=tasks"]').click();
+ await page.waitForFunction(()=>document.querySelector('#project-tab')?.textContent.includes('اعتماد المخططات'));
+ findings.push('tabs');
+ await page.locator('#project-detail textarea').fill('ملاحظة تجريبية محفوظة');
+ await page.locator('#project-detail button').click();
+ await page.waitForFunction(()=>document.querySelector('#project-detail textarea')?.value==='ملاحظة تجريبية محفوظة');
+ findings.push('POST edit notes');
+ await page.locator('aside input[name=q]').fill('تصميم');
+ await page.locator('aside button').click();
+ await page.waitForFunction(()=>document.querySelector('#project-list')?.textContent.includes('تصميم مجمع هندسي')&&!document.querySelector('#project-list')?.textContent.includes('تجديد مركز الخدمات'));
+ findings.push('GET search');
+ await page.locator('#project-detail a[href*="/demo/error"]').click();
+ await page.locator('#project-detail[role=alert]').waitFor();
+ assert.match(await page.locator('#project-detail').innerText(),/HTTP 500/);
+ findings.push('server-supplied error state');
+ await page.locator('#project-detail a').click();
+ await page.locator('#project-detail form').waitFor();
+ findings.push('error recovery');
+ await page.screenshot({path:'evidence/demo-desktop.png',fullPage:true});
+ await page.setViewportSize({width:390,height:844});
+ await page.screenshot({path:'evidence/demo-mobile.png',fullPage:true});
+ assert((await page.locator('#project-list').isVisible()));
+ findings.push('mobile screenshot and visibility');
+ assert.deepEqual(errors,[]);
+ console.log(JSON.stringify({status:'PASS',checks:findings,unhandledErrors:errors,shots:['evidence/demo-desktop.png','evidence/demo-mobile.png']},null,2));
+ fs.writeFileSync('evidence/demo-check.json',JSON.stringify({status:'PASS',checks:findings,errors},null,2));
+}catch(e){console.error('DEMO FAIL '+String(e.stack||e));fs.writeFileSync('evidence/demo-check.json',JSON.stringify({status:'FAIL',checks:findings,error:String(e.stack||e)},null,2));process.exitCode=1;}
+finally{if(browser)await browser.close();await s.close();}

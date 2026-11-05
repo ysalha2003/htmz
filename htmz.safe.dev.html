@@ -1,0 +1,17 @@
+<script>
+  // Safer alternative: maintain the original link, form, and selector conventions.
+  function htmzSafe(frame) {
+    setTimeout(() => {
+      try {
+        const hash = frame.contentWindow.location.hash;
+        const target = hash && document.querySelector(hash);
+        target?.replaceWith(...frame.contentDocument.body.childNodes);
+      } catch (error) {
+        // Browser origin restrictions and malformed CSS selectors must not
+        // produce uncaught page exceptions. The request still cannot be recovered.
+        console.warn('htmz:', error.name);
+      }
+    });
+  }
+</script>
+<iframe hidden name="htmz" onload="htmzSafe(this)"></iframe>

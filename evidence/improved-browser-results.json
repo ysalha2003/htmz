@@ -1,0 +1,430 @@
+{
+  "variant": "safe",
+  "started": "2026-11-05T04:06:53.207Z",
+  "upstreamSha": "941cd22426e138e1897f9f3bc78992066c079cf6",
+  "browsers": {
+    "chromium": {
+      "version": "140.0.7339.208",
+      "launchError": null,
+      "tests": [
+        {
+          "name": "fragment swap",
+          "status": "PASS",
+          "elapsedMs": 95,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "independent zones",
+          "status": "PASS",
+          "elapsedMs": 160,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "GET form",
+          "status": "PASS",
+          "elapsedMs": 93,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "POST form",
+          "status": "PASS",
+          "elapsedMs": 94,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "repeat requests",
+          "status": "PASS",
+          "elapsedMs": 82,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "missing target",
+          "status": "PASS",
+          "elapsedMs": 242,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "no URL hash",
+          "status": "PASS",
+          "elapsedMs": 237,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "invalid selector does not crash",
+          "status": "PASS",
+          "elapsedMs": 242,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "empty response deletes zone",
+          "status": "PASS",
+          "elapsedMs": 60,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "HTTP 500 error markup",
+          "status": "PASS",
+          "elapsedMs": 78,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "server redirect",
+          "status": "PASS",
+          "elapsedMs": 65,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "rapid navigation",
+          "status": "PASS",
+          "elapsedMs": 627,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "transplanted controls",
+          "status": "PASS",
+          "elapsedMs": 100,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "parent location remains unchanged",
+          "status": "PASS",
+          "elapsedMs": 74,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "keyboard Enter",
+          "status": "PASS",
+          "elapsedMs": 111,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "unrelated focused input retained",
+          "status": "PASS",
+          "elapsedMs": 94,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "cross-origin navigation does not crash",
+          "status": "PASS",
+          "elapsedMs": 460,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "mobile viewport",
+          "status": "PASS",
+          "elapsedMs": 106,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "CSP limitation characterized",
+          "status": "PASS",
+          "elapsedMs": 274,
+          "failure": "",
+          "pageErrors": []
+        }
+      ]
+    },
+    "firefox": {
+      "version": "153.0",
+      "launchError": null,
+      "tests": [
+        {
+          "name": "fragment swap",
+          "status": "PASS",
+          "elapsedMs": 308,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "independent zones",
+          "status": "PASS",
+          "elapsedMs": 153,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "GET form",
+          "status": "PASS",
+          "elapsedMs": 246,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "POST form",
+          "status": "PASS",
+          "elapsedMs": 190,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "repeat requests",
+          "status": "PASS",
+          "elapsedMs": 104,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "missing target",
+          "status": "PASS",
+          "elapsedMs": 268,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "no URL hash",
+          "status": "PASS",
+          "elapsedMs": 283,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "invalid selector does not crash",
+          "status": "PASS",
+          "elapsedMs": 265,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "empty response deletes zone",
+          "status": "PASS",
+          "elapsedMs": 99,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "HTTP 500 error markup",
+          "status": "PASS",
+          "elapsedMs": 106,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "server redirect",
+          "status": "PASS",
+          "elapsedMs": 120,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "rapid navigation",
+          "status": "PASS",
+          "elapsedMs": 645,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "transplanted controls",
+          "status": "PASS",
+          "elapsedMs": 132,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "parent location remains unchanged",
+          "status": "PASS",
+          "elapsedMs": 96,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "keyboard Enter",
+          "status": "PASS",
+          "elapsedMs": 157,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "unrelated focused input retained",
+          "status": "PASS",
+          "elapsedMs": 129,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "cross-origin navigation does not crash",
+          "status": "PASS",
+          "elapsedMs": 493,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "mobile viewport",
+          "status": "PASS",
+          "elapsedMs": 151,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "CSP limitation characterized",
+          "status": "PASS",
+          "elapsedMs": 328,
+          "failure": "",
+          "pageErrors": []
+        }
+      ]
+    },
+    "webkit": {
+      "version": "26.5",
+      "launchError": null,
+      "tests": [
+        {
+          "name": "fragment swap",
+          "status": "PASS",
+          "elapsedMs": 46,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "independent zones",
+          "status": "PASS",
+          "elapsedMs": 86,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "GET form",
+          "status": "PASS",
+          "elapsedMs": 184,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "POST form",
+          "status": "PASS",
+          "elapsedMs": 179,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "repeat requests",
+          "status": "PASS",
+          "elapsedMs": 83,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "missing target",
+          "status": "PASS",
+          "elapsedMs": 212,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "no URL hash",
+          "status": "PASS",
+          "elapsedMs": 224,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "invalid selector does not crash",
+          "status": "PASS",
+          "elapsedMs": 214,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "empty response deletes zone",
+          "status": "PASS",
+          "elapsedMs": 42,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "HTTP 500 error markup",
+          "status": "PASS",
+          "elapsedMs": 47,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "server redirect",
+          "status": "PASS",
+          "elapsedMs": 41,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "rapid navigation",
+          "status": "PASS",
+          "elapsedMs": 595,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "transplanted controls",
+          "status": "PASS",
+          "elapsedMs": 74,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "parent location remains unchanged",
+          "status": "PASS",
+          "elapsedMs": 57,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "keyboard Enter",
+          "status": "PASS",
+          "elapsedMs": 80,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "unrelated focused input retained",
+          "status": "PASS",
+          "elapsedMs": 83,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "cross-origin navigation does not crash",
+          "status": "PASS",
+          "elapsedMs": 443,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "mobile viewport",
+          "status": "PASS",
+          "elapsedMs": 89,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "CSP limitation characterized",
+          "status": "PASS",
+          "elapsedMs": 234,
+          "failure": "",
+          "pageErrors": []
+        }
+      ]
+    }
+  },
+  "counts": {
+    "PASS": 57,
+    "FAIL": 0,
+    "ENVIRONMENT": 0
+  },
+  "finished": "2026-11-05T04:07:16.202Z"
+}

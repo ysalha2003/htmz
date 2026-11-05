@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": [
+    "main page",
+    "project detail",
+    "tabs",
+    "POST edit notes",
+    "GET search",
+    "server-supplied error state",
+    "error recovery",
+    "mobile screenshot and visibility"
+  ],
+  "errors": []
+}
