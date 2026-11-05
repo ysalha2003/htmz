@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>HTMZ Kit | المشاريع</title>
+  <title>{{TITLE}} | HTMZ Kit</title>
   <link rel="stylesheet" href="/design.css">
-  <script src="/runtime.js" defer></script>
+  <script src="/kit.js" defer></script>
 </head>
 <body>
   <a class="ds-skip" href="#main">تجاوز إلى المحتوى الرئيسي</a>
@@ -26,19 +26,12 @@
         <div>
           <p class="ds-eyebrow">WORKSPACE / PROJECTS</p>
           <h1>المشاريع</h1>
-          <p class="ds-muted">لوحة تجريبية مبنية على HTML عادي، بدون إطار JavaScript للتطبيق.</p>
+          <p class="ds-muted">لوحة تجريبية مبنية على HTML عادي: كل رابط صفحة كاملة، وطبقة تحسين اختيارية واحدة.</p>
         </div>
         <span class="ds-pill">3 مشاريع تجريبية</span>
       </div>
       <div class="ds-layout">
         <aside class="ds-card ds-sidebar" aria-label="قائمة المشاريع">
-          <form action="/projects#project-list" method="get" target="htmz" class="ds-search">
-            <label for="project-search">البحث في المشاريع</label>
-            <div class="ds-input-row">
-              <input id="project-search" name="q" type="search" placeholder="اسم المشروع" autocomplete="off">
-              <button class="ds-button ds-button-quiet" type="submit">بحث</button>
-            </div>
-          </form>
           {{PROJECT_LIST}}
         </aside>
         <div class="ds-content">
@@ -46,11 +39,9 @@
         </div>
       </div>
       <footer class="ds-footer">
-        <span id="ds-status" role="status" aria-live="polite" aria-atomic="true"></span>
         <span>بيانات اصطناعية · تصميم RTL · دون مكتبات تشغيل</span>
       </footer>
     </main>
   </div>
-  <iframe id="htmz-frame" name="htmz" title="قناة تحديث المحتوى" hidden tabindex="-1" aria-hidden="true"></iframe>
 </body>
 </html>

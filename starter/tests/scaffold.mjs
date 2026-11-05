@@ -22,7 +22,7 @@ try{
   const lock=JSON.parse(fs.readFileSync(path.join(dest,'package-lock.json'),'utf8'));
   if(pkg.name!==slug || lock.name!==slug)throw Error('package identity is inconsistent');
   checks++;
-  for(const rel of ['backends/node/server.mjs','backends/python/server.py','public/design.css','public/runtime.js','START_HERE.md']){
+  for(const rel of ['backends/node/server.mjs','backends/python/server.py','public/design.css','public/kit.js','docs/CONTRACT-AR.md','START_HERE.md']){
     if(!fs.existsSync(path.join(dest,rel)))throw Error('generated file missing: '+rel);
   }
   checks++;

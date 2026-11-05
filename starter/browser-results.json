@@ -1,765 +1,1411 @@
 {
-  "date": "2026-11-05T12:07:37.445Z",
+  "date": "2026-11-05T14:51:03.144Z",
+  "platform": "win32",
+  "kit": {
+    "raw": 10945,
+    "gzip": 4258,
+    "limit": 5120
+  },
+  "notes": [
+    "webkit: startViewTransition stubbed out (Playwright WebKit/Windows web-process crash); see tests/browser.mjs open()"
+  ],
   "results": [
     {
-      "backend": "node",
-      "browser": "chromium",
-      "name": "design gallery served with shared CSS",
+      "backend": "-",
+      "browser": "-",
+      "name": "RT-1 kit.js ≤ 5 KB gzip",
       "status": "PASS",
-      "error": ""
+      "detail": "4258 bytes gzip"
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "SSR and strict CSP",
+      "name": "SV-1/SV-3 home is a full page with strict headers",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "linked project fragments",
+      "name": "RT-4 link replaces only the target element",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "tabs and managed focus",
+      "name": "RT-5 URL and title follow a GET link",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "GET search",
+      "name": "RT-12 focus lands in the region and one status region announces",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "POST notes saves and escapes HTML",
+      "name": "RT-4 nested tab region swaps from the same page URL (fragment)",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "CSRF rejects forged write",
+      "name": "RT-5 GET form pushes its query and swaps the list only",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "foreign Origin rejected with valid CSRF token",
+      "name": "RT-5 back and forward re-fetch the recorded region",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "strict CSP blocks injected inline script",
+      "name": "RT-7 422 re-renders the form with values, alert and focus, without pushState",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "explicit foreign origin rejected",
+      "name": "RT-6/SV-6 PRG: POST → 303 → GET pushes the final URL and escapes output",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "non-ASCII CSRF rejected without server error",
+      "name": "RT-5 back after PRG re-fetches the pre-redirect URL",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "server validation returns 422 fragment",
+      "name": "RT-9 race: the latest request wins and the slow one never appears",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "contract mismatch is rejected safely",
+      "name": "RT-12 aria-busy is set during the request and cleared after",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "missing URL fragment shows failure state",
+      "name": "RT-8 500 → in-place error with retry; retry recovers",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "invalid fragment ID cannot replace content",
+      "name": "RT-8 4xx without the target id → error state",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "missing project returns 404 fragment",
+      "name": "RT-8 network failure → error state",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "mobile viewport and RTL",
+      "name": "RT-8 10 s timeout → error state",
       "status": "PASS",
-      "error": ""
+      "detail": "timed out after 10490 ms"
     },
     {
       "backend": "node",
       "browser": "chromium",
-      "name": "no uncaught JS exception",
+      "name": "RT-11 scripts and inline handlers in responses never execute",
       "status": "PASS",
-      "error": ""
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "404 page carrying the target id is swapped and its URL pushed",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "modified clicks, download, _blank and foreign links stay native",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "RT-6 redirect to another origin becomes a full navigation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "no uncaught exceptions in the enhanced page",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "RT-10 internal exception → full navigation quickly",
+      "status": "PASS",
+      "detail": "fallback navigation started 13 ms after the click"
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "2xx without the target id → full navigation (contract warning)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "non-HTML response → full navigation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "RT-13 startViewTransition only without prefers-reduced-motion",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "RT-3 no JavaScript: links, search, tabs, PRG and 422 work as full pages",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "SV-1 every GET route answers a full document to Sec-Fetch-Dest: document",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "SV-2 fragments are optional: self-contained region alone, otherwise the full page",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "SV-3 headers on 303, 404 and 422 responses",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "SV-4 CSRF: forged token, Origin null, foreign Origin and cross-site metadata → 403",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "SV-5 422 returns the whole form with values, aria-invalid and role=alert",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "SV-6 script and handler payloads come back encoded everywhere",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "mobile viewport, RTL and no horizontal overflow",
+      "status": "PASS",
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "design gallery served with shared CSS",
+      "name": "SV-1/SV-3 home is a full page with strict headers",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "SSR and strict CSP",
+      "name": "RT-4 link replaces only the target element",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "linked project fragments",
+      "name": "RT-5 URL and title follow a GET link",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "tabs and managed focus",
+      "name": "RT-12 focus lands in the region and one status region announces",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "GET search",
+      "name": "RT-4 nested tab region swaps from the same page URL (fragment)",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "POST notes saves and escapes HTML",
+      "name": "RT-5 GET form pushes its query and swaps the list only",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "CSRF rejects forged write",
+      "name": "RT-5 back and forward re-fetch the recorded region",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "foreign Origin rejected with valid CSRF token",
+      "name": "RT-7 422 re-renders the form with values, alert and focus, without pushState",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "strict CSP blocks injected inline script",
+      "name": "RT-6/SV-6 PRG: POST → 303 → GET pushes the final URL and escapes output",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "explicit foreign origin rejected",
+      "name": "RT-5 back after PRG re-fetches the pre-redirect URL",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "non-ASCII CSRF rejected without server error",
+      "name": "RT-9 race: the latest request wins and the slow one never appears",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "server validation returns 422 fragment",
+      "name": "RT-12 aria-busy is set during the request and cleared after",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "contract mismatch is rejected safely",
+      "name": "RT-8 500 → in-place error with retry; retry recovers",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "missing URL fragment shows failure state",
+      "name": "RT-8 4xx without the target id → error state",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "invalid fragment ID cannot replace content",
+      "name": "RT-8 network failure → error state",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "missing project returns 404 fragment",
+      "name": "RT-8 10 s timeout → error state",
       "status": "PASS",
-      "error": ""
+      "detail": "timed out after 10076 ms"
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "mobile viewport and RTL",
+      "name": "RT-11 scripts and inline handlers in responses never execute",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "firefox",
-      "name": "no uncaught JS exception",
+      "name": "404 page carrying the target id is swapped and its URL pushed",
       "status": "PASS",
-      "error": ""
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "modified clicks, download, _blank and foreign links stay native",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "RT-6 redirect to another origin becomes a full navigation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "no uncaught exceptions in the enhanced page",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "RT-10 internal exception → full navigation quickly",
+      "status": "PASS",
+      "detail": "fallback navigation started 12 ms after the click"
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "2xx without the target id → full navigation (contract warning)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "non-HTML response → full navigation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "RT-13 startViewTransition only without prefers-reduced-motion",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "RT-3 no JavaScript: links, search, tabs, PRG and 422 work as full pages",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "SV-1 every GET route answers a full document to Sec-Fetch-Dest: document",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "SV-2 fragments are optional: self-contained region alone, otherwise the full page",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "SV-3 headers on 303, 404 and 422 responses",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "SV-4 CSRF: forged token, Origin null, foreign Origin and cross-site metadata → 403",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "SV-5 422 returns the whole form with values, aria-invalid and role=alert",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "SV-6 script and handler payloads come back encoded everywhere",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "mobile viewport, RTL and no horizontal overflow",
+      "status": "PASS",
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "design gallery served with shared CSS",
+      "name": "SV-1/SV-3 home is a full page with strict headers",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "SSR and strict CSP",
+      "name": "RT-4 link replaces only the target element",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "linked project fragments",
+      "name": "RT-5 URL and title follow a GET link",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "tabs and managed focus",
+      "name": "RT-12 focus lands in the region and one status region announces",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "GET search",
+      "name": "RT-4 nested tab region swaps from the same page URL (fragment)",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "POST notes saves and escapes HTML",
+      "name": "RT-5 GET form pushes its query and swaps the list only",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "CSRF rejects forged write",
+      "name": "RT-5 back and forward re-fetch the recorded region",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "foreign Origin rejected with valid CSRF token",
+      "name": "RT-7 422 re-renders the form with values, alert and focus, without pushState",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "strict CSP blocks injected inline script",
+      "name": "RT-6/SV-6 PRG: POST → 303 → GET pushes the final URL and escapes output",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "explicit foreign origin rejected",
+      "name": "RT-5 back after PRG re-fetches the pre-redirect URL",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "non-ASCII CSRF rejected without server error",
+      "name": "RT-9 race: the latest request wins and the slow one never appears",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "server validation returns 422 fragment",
+      "name": "RT-12 aria-busy is set during the request and cleared after",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "contract mismatch is rejected safely",
+      "name": "RT-8 500 → in-place error with retry; retry recovers",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "missing URL fragment shows failure state",
+      "name": "RT-8 4xx without the target id → error state",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "invalid fragment ID cannot replace content",
+      "name": "RT-8 network failure → error state",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "missing project returns 404 fragment",
+      "name": "RT-8 10 s timeout → error state",
       "status": "PASS",
-      "error": ""
+      "detail": "timed out after 10148 ms"
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "mobile viewport and RTL",
+      "name": "RT-11 scripts and inline handlers in responses never execute",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "node",
       "browser": "webkit",
-      "name": "no uncaught JS exception",
+      "name": "404 page carrying the target id is swapped and its URL pushed",
       "status": "PASS",
-      "error": ""
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "modified clicks, download, _blank and foreign links stay native",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "RT-6 redirect to another origin becomes a full navigation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "no uncaught exceptions in the enhanced page",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "RT-10 internal exception → full navigation quickly",
+      "status": "PASS",
+      "detail": "fallback navigation started 29 ms after the click"
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "2xx without the target id → full navigation (contract warning)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "non-HTML response → full navigation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "RT-13 startViewTransition only without prefers-reduced-motion",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "RT-3 no JavaScript: links, search, tabs, PRG and 422 work as full pages",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "SV-1 every GET route answers a full document to Sec-Fetch-Dest: document",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "SV-2 fragments are optional: self-contained region alone, otherwise the full page",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "SV-3 headers on 303, 404 and 422 responses",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "SV-4 CSRF: forged token, Origin null, foreign Origin and cross-site metadata → 403",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "SV-5 422 returns the whole form with values, aria-invalid and role=alert",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "SV-6 script and handler payloads come back encoded everywhere",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "mobile viewport, RTL and no horizontal overflow",
+      "status": "PASS",
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "design gallery served with shared CSS",
+      "name": "SV-1/SV-3 home is a full page with strict headers",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "SSR and strict CSP",
+      "name": "RT-4 link replaces only the target element",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "linked project fragments",
+      "name": "RT-5 URL and title follow a GET link",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "tabs and managed focus",
+      "name": "RT-12 focus lands in the region and one status region announces",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "GET search",
+      "name": "RT-4 nested tab region swaps from the same page URL (fragment)",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "POST notes saves and escapes HTML",
+      "name": "RT-5 GET form pushes its query and swaps the list only",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "CSRF rejects forged write",
+      "name": "RT-5 back and forward re-fetch the recorded region",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "foreign Origin rejected with valid CSRF token",
+      "name": "RT-7 422 re-renders the form with values, alert and focus, without pushState",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "strict CSP blocks injected inline script",
+      "name": "RT-6/SV-6 PRG: POST → 303 → GET pushes the final URL and escapes output",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "explicit foreign origin rejected",
+      "name": "RT-5 back after PRG re-fetches the pre-redirect URL",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "non-ASCII CSRF rejected without server error",
+      "name": "RT-9 race: the latest request wins and the slow one never appears",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "server validation returns 422 fragment",
+      "name": "RT-12 aria-busy is set during the request and cleared after",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "contract mismatch is rejected safely",
+      "name": "RT-8 500 → in-place error with retry; retry recovers",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "missing URL fragment shows failure state",
+      "name": "RT-8 4xx without the target id → error state",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "invalid fragment ID cannot replace content",
+      "name": "RT-8 network failure → error state",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "missing project returns 404 fragment",
+      "name": "RT-8 10 s timeout → error state",
       "status": "PASS",
-      "error": ""
+      "detail": "timed out after 10037 ms"
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "mobile viewport and RTL",
+      "name": "RT-11 scripts and inline handlers in responses never execute",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "chromium",
-      "name": "no uncaught JS exception",
+      "name": "404 page carrying the target id is swapped and its URL pushed",
       "status": "PASS",
-      "error": ""
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "modified clicks, download, _blank and foreign links stay native",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "RT-6 redirect to another origin becomes a full navigation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "no uncaught exceptions in the enhanced page",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "RT-10 internal exception → full navigation quickly",
+      "status": "PASS",
+      "detail": "fallback navigation started 25 ms after the click"
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "2xx without the target id → full navigation (contract warning)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "non-HTML response → full navigation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "RT-13 startViewTransition only without prefers-reduced-motion",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "RT-3 no JavaScript: links, search, tabs, PRG and 422 work as full pages",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "SV-1 every GET route answers a full document to Sec-Fetch-Dest: document",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "SV-2 fragments are optional: self-contained region alone, otherwise the full page",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "SV-3 headers on 303, 404 and 422 responses",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "SV-4 CSRF: forged token, Origin null, foreign Origin and cross-site metadata → 403",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "SV-5 422 returns the whole form with values, aria-invalid and role=alert",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "SV-6 script and handler payloads come back encoded everywhere",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "mobile viewport, RTL and no horizontal overflow",
+      "status": "PASS",
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "design gallery served with shared CSS",
+      "name": "SV-1/SV-3 home is a full page with strict headers",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "SSR and strict CSP",
+      "name": "RT-4 link replaces only the target element",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "linked project fragments",
+      "name": "RT-5 URL and title follow a GET link",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "tabs and managed focus",
+      "name": "RT-12 focus lands in the region and one status region announces",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "GET search",
+      "name": "RT-4 nested tab region swaps from the same page URL (fragment)",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "POST notes saves and escapes HTML",
+      "name": "RT-5 GET form pushes its query and swaps the list only",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "CSRF rejects forged write",
+      "name": "RT-5 back and forward re-fetch the recorded region",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "foreign Origin rejected with valid CSRF token",
+      "name": "RT-7 422 re-renders the form with values, alert and focus, without pushState",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "strict CSP blocks injected inline script",
+      "name": "RT-6/SV-6 PRG: POST → 303 → GET pushes the final URL and escapes output",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "explicit foreign origin rejected",
+      "name": "RT-5 back after PRG re-fetches the pre-redirect URL",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "non-ASCII CSRF rejected without server error",
+      "name": "RT-9 race: the latest request wins and the slow one never appears",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "server validation returns 422 fragment",
+      "name": "RT-12 aria-busy is set during the request and cleared after",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "contract mismatch is rejected safely",
+      "name": "RT-8 500 → in-place error with retry; retry recovers",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "missing URL fragment shows failure state",
+      "name": "RT-8 4xx without the target id → error state",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "invalid fragment ID cannot replace content",
+      "name": "RT-8 network failure → error state",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "missing project returns 404 fragment",
+      "name": "RT-8 10 s timeout → error state",
       "status": "PASS",
-      "error": ""
+      "detail": "timed out after 10495 ms"
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "mobile viewport and RTL",
+      "name": "RT-11 scripts and inline handlers in responses never execute",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "firefox",
-      "name": "no uncaught JS exception",
+      "name": "404 page carrying the target id is swapped and its URL pushed",
       "status": "PASS",
-      "error": ""
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "modified clicks, download, _blank and foreign links stay native",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "RT-6 redirect to another origin becomes a full navigation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "no uncaught exceptions in the enhanced page",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "RT-10 internal exception → full navigation quickly",
+      "status": "PASS",
+      "detail": "fallback navigation started 5 ms after the click"
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "2xx without the target id → full navigation (contract warning)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "non-HTML response → full navigation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "RT-13 startViewTransition only without prefers-reduced-motion",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "RT-3 no JavaScript: links, search, tabs, PRG and 422 work as full pages",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "SV-1 every GET route answers a full document to Sec-Fetch-Dest: document",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "SV-2 fragments are optional: self-contained region alone, otherwise the full page",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "SV-3 headers on 303, 404 and 422 responses",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "SV-4 CSRF: forged token, Origin null, foreign Origin and cross-site metadata → 403",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "SV-5 422 returns the whole form with values, aria-invalid and role=alert",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "SV-6 script and handler payloads come back encoded everywhere",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "mobile viewport, RTL and no horizontal overflow",
+      "status": "PASS",
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "design gallery served with shared CSS",
+      "name": "SV-1/SV-3 home is a full page with strict headers",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "SSR and strict CSP",
+      "name": "RT-4 link replaces only the target element",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "linked project fragments",
+      "name": "RT-5 URL and title follow a GET link",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "tabs and managed focus",
+      "name": "RT-12 focus lands in the region and one status region announces",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "GET search",
+      "name": "RT-4 nested tab region swaps from the same page URL (fragment)",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "POST notes saves and escapes HTML",
+      "name": "RT-5 GET form pushes its query and swaps the list only",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "CSRF rejects forged write",
+      "name": "RT-5 back and forward re-fetch the recorded region",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "foreign Origin rejected with valid CSRF token",
+      "name": "RT-7 422 re-renders the form with values, alert and focus, without pushState",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "strict CSP blocks injected inline script",
+      "name": "RT-6/SV-6 PRG: POST → 303 → GET pushes the final URL and escapes output",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "explicit foreign origin rejected",
+      "name": "RT-5 back after PRG re-fetches the pre-redirect URL",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "non-ASCII CSRF rejected without server error",
+      "name": "RT-9 race: the latest request wins and the slow one never appears",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "server validation returns 422 fragment",
+      "name": "RT-12 aria-busy is set during the request and cleared after",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "contract mismatch is rejected safely",
+      "name": "RT-8 500 → in-place error with retry; retry recovers",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "missing URL fragment shows failure state",
+      "name": "RT-8 4xx without the target id → error state",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "invalid fragment ID cannot replace content",
+      "name": "RT-8 network failure → error state",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "missing project returns 404 fragment",
+      "name": "RT-8 10 s timeout → error state",
       "status": "PASS",
-      "error": ""
+      "detail": "timed out after 10629 ms"
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "mobile viewport and RTL",
+      "name": "RT-11 scripts and inline handlers in responses never execute",
       "status": "PASS",
-      "error": ""
+      "detail": ""
     },
     {
       "backend": "python",
       "browser": "webkit",
-      "name": "no uncaught JS exception",
+      "name": "404 page carrying the target id is swapped and its URL pushed",
       "status": "PASS",
-      "error": ""
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "modified clicks, download, _blank and foreign links stay native",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "RT-6 redirect to another origin becomes a full navigation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "no uncaught exceptions in the enhanced page",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "RT-10 internal exception → full navigation quickly",
+      "status": "PASS",
+      "detail": "fallback navigation started 26 ms after the click"
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "2xx without the target id → full navigation (contract warning)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "non-HTML response → full navigation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "RT-13 startViewTransition only without prefers-reduced-motion",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "RT-3 no JavaScript: links, search, tabs, PRG and 422 work as full pages",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "SV-1 every GET route answers a full document to Sec-Fetch-Dest: document",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "SV-2 fragments are optional: self-contained region alone, otherwise the full page",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "SV-3 headers on 303, 404 and 422 responses",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "SV-4 CSRF: forged token, Origin null, foreign Origin and cross-site metadata → 403",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "SV-5 422 returns the whole form with values, aria-invalid and role=alert",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "SV-6 script and handler payloads come back encoded everywhere",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "mobile viewport, RTL and no horizontal overflow",
+      "status": "PASS",
+      "detail": ""
     }
   ],
   "counts": {
-    "pass": 108,
+    "pass": 199,
     "fail": 0
   },
   "versions": {

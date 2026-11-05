@@ -57,7 +57,7 @@ const guide = [
   'Node: http://127.0.0.1:4188/',
   'Python: http://127.0.0.1:4189/',
   '',
-  'لتعديل التصميم: public/design.css وpublic/index.html.',
+  'لتعديل التصميم: public/design.css وpublic/index.html. طبقة التحسين: public/kit.js (العقد في docs/CONTRACT-AR.md).',
   'لتعديل بيانات التجربة: projects.json.',
   'للاختبارات والتفاصيل: README.md وdocs/PRODUCTION-CHECKLIST-AR.md.',
   'تنبيه: قبل الإنتاج يجب إضافة تسجيل دخول حقيقي وقاعدة بيانات دائمة ونظام جلسات وآلية نسخ احتياطي.',
