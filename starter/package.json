@@ -2,16 +2,17 @@
   "name": "htmz-starter-kit",
   "version": "0.1.0",
   "private": true,
-  "description": "Backend-agnostic HTML fragment starter with strict design tokens",
+  "description": "HTML-first starter: full-page server rendering plus one optional fetch enhancement layer, with strict design tokens",
   "type": "module",
   "scripts": {
     "start:node": "node backends/node/server.mjs",
     "start:python": "python backends/python/server.py",
     "check:design": "node tools/design-check.mjs",
+    "check:size": "node tests/size.mjs",
     "test:browsers": "node tests/browser.mjs",
     "create:app": "node tools/create-app.mjs",
     "test:scaffold": "node tests/scaffold.mjs",
-    "verify": "npm run check:design && npm run test:browsers && npm run test:scaffold"
+    "verify": "npm run check:design && npm run check:size && npm run test:browsers && npm run test:scaffold"
   },
   "devDependencies": {
     "playwright": "1.62.1"

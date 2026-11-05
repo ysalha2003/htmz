@@ -122,8 +122,11 @@
   .ds-alert-error { background: var(--ds-color-error-soft); color: var(--ds-color-error); }
   .ds-alert-success { background: var(--ds-color-success-soft); color: var(--ds-color-success); }
   .ds-footer { justify-content: space-between; color: var(--ds-color-muted); font-size: var(--ds-text-xs); margin-block-start: var(--ds-space-6); }
-  .ds-footer [role="status"]:not(:empty) { color: var(--ds-color-primary); font-weight: var(--ds-weight-bold); }
-  .ds-empty { padding: var(--ds-space-6); color: var(--ds-color-muted); }
+    .ds-empty { padding: var(--ds-space-6); color: var(--ds-color-muted); }
+  .kit-error { display: grid; gap: var(--ds-space-2); justify-items: start; padding: var(--ds-space-3); border-radius: var(--ds-radius-md); margin-block-end: var(--ds-space-3); background: var(--ds-color-error-soft); color: var(--ds-color-error); }
+  .kit-error button { appearance: none; background: var(--ds-color-surface); color: var(--ds-color-error); border: var(--ds-border-width) solid var(--ds-color-error); border-radius: var(--ds-radius-md); min-height: var(--ds-input-height); padding: var(--ds-space-2) var(--ds-space-4); cursor: pointer; }
+  [aria-busy="true"] { cursor: progress; }
+  [aria-busy="true"] :is(button, [type="submit"]) { pointer-events: none; }
 }
 @layer responsive {
   @media (max-width: 760px) {

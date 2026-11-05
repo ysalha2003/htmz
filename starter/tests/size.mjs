@@ -1,0 +1,20 @@
+// RT-1 / RT-2 gate: kit.js must stay one dependency-free ES2020 file at or under 5 KB gzip.
+import fs from 'node:fs';
+import path from 'node:path';
+import zlib from 'node:zlib';
+import {spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const file = path.join(root, 'public/kit.js');
+const LIMIT = 5 * 1024;
+const source = fs.readFileSync(file);
+const gzip = zlib.gzipSync(source, {level: 9}).length;
+const brotli = zlib.brotliCompressSync(source).length;
+const errors = [];
+if (gzip > LIMIT) errors.push('kit.js is ' + gzip + ' bytes gzip; limit ' + LIMIT);
+if (/^\s*(import|export)\b|\brequire\s*\(/m.test(source.toString())) errors.push('kit.js must not import or require anything');
+if (spawnSync(process.execPath, ['--check', file], {encoding: 'utf8'}).status !== 0) errors.push('kit.js does not parse');
+const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
+if (pkg.dependencies && Object.keys(pkg.dependencies).length) errors.push('runtime dependencies are forbidden');
+console.log(JSON.stringify({status: errors.length ? 'FAIL' : 'PASS', raw: source.length, gzip, brotli, limit: LIMIT, errors}, null, 2));
+if (errors.length) process.exitCode = 1;
