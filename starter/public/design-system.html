@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTMZ Kit | Design System</title>
+  <link rel="stylesheet" href="/design.css">
+</head>
+<body>
+  <a class="ds-skip" href="#main">تجاوز إلى المحتوى</a>
+  <header class="ds-topbar">
+    <a class="ds-brand" href="/"><span class="ds-brand-mark" aria-hidden="true">H</span><span><strong>HTMZ Kit</strong><small>Design Language</small></span></a>
+    <span class="ds-tag">Components v0.1</span>
+  </header>
+  <main id="main" class="ds-main">
+    <div class="ds-page-heading">
+      <div><p class="ds-eyebrow">FOUNDATIONS / COMPONENTS</p><h1>نظام التصميم</h1><p class="ds-muted">عناصر HTML دلالية وقيم تصميم موحدة دون مكتبات واجهات.</p></div>
+      <a class="ds-button" href="/">العودة للتطبيق</a>
+    </div>
+    <div class="ds-layout">
+      <section class="ds-card">
+        <h2>الأزرار والحالات</h2>
+        <p class="ds-muted">أزرار أصلية قابلة للوصول بلوحة المفاتيح.</p>
+        <div class="ds-section"><button class="ds-button" type="button">إجراء أساسي</button></div>
+        <div class="ds-section"><button class="ds-button ds-button-quiet" type="button">إجراء ثانوي</button></div>
+        <p><span class="ds-pill">تم بنجاح</span></p>
+        <div class="ds-alert ds-alert-success" role="status">رسالة نجاح</div>
+        <div class="ds-alert ds-alert-error" role="alert">رسالة تنبيه</div>
+      </section>
+      <section class="ds-card">
+        <h2>الحقول والمحتوى</h2>
+        <div class="ds-section"><label for="name">اسم المشروع</label><input id="name" value="مشروع تجريبي"></div>
+        <div class="ds-section"><label for="note">الملاحظات</label><textarea id="note" rows="3">هذه منطقة نص قياسية.</textarea></div>
+        <nav class="ds-tabs" aria-label="معرض التبويبات"><a href="#preview">الملخص</a><a href="#preview">التفاصيل</a></nav>
+        <div id="preview" class="ds-panel"><h3>مساحة المحتوى</h3><p class="ds-muted">خلفية ومسافات وحدود من Design Tokens.</p></div>
+      </section>
+    </div>
+    <footer class="ds-footer"><span>جميع المكونات تعتمد على design.css</span><span>RTL · Responsive · Semantic HTML</span></footer>
+  </main>
+</body>
+</html>

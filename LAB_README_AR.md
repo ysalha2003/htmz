@@ -26,4 +26,7 @@
 
 اقرأ reports/01-EXECUTIVE-SUMMARY-AR.md للقرار، وreports/07-DEVELOPMENT-GUIDE-AR.md للتشغيل الكامل، وreports/05-SECURITY-REVIEW-AR.md لحدود الثقة والأمان.
 
+## HTMZ Kit — تطوير جديد Backend Agnostic
+المجلد starter/ يحتوي تطبيقًا أوليًا بواجهات HTML موحدة وDesign System صارم وBackend Node.js أو Python، ومولّدًا لإنشاء تطبيق مستقل. ابدأ من starter/README.md، ثم اقرأ starter/docs/RELEASE-REVIEW-AR.md. لا تخلط بين نواة htmz الأصلية وتجربة Starter Kit الأعلى منها.
+
 **تنبيه:** اجتياز الاختبارات لا يعني أن htmz آمن لمعالجة HTML غير موثوق أو متوافق مع كل إعدادات CSP أو جاهز للنشر الإنتاجي دون مراجعة التطبيق.

@@ -1,0 +1,770 @@
+{
+  "date": "2026-11-05T12:07:37.445Z",
+  "results": [
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "design gallery served with shared CSS",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "SSR and strict CSP",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "linked project fragments",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "tabs and managed focus",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "GET search",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "POST notes saves and escapes HTML",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "CSRF rejects forged write",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "foreign Origin rejected with valid CSRF token",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "strict CSP blocks injected inline script",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "explicit foreign origin rejected",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "non-ASCII CSRF rejected without server error",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "server validation returns 422 fragment",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "contract mismatch is rejected safely",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "missing URL fragment shows failure state",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "invalid fragment ID cannot replace content",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "missing project returns 404 fragment",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "mobile viewport and RTL",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "chromium",
+      "name": "no uncaught JS exception",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "design gallery served with shared CSS",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "SSR and strict CSP",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "linked project fragments",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "tabs and managed focus",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "GET search",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "POST notes saves and escapes HTML",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "CSRF rejects forged write",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "foreign Origin rejected with valid CSRF token",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "strict CSP blocks injected inline script",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "explicit foreign origin rejected",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "non-ASCII CSRF rejected without server error",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "server validation returns 422 fragment",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "contract mismatch is rejected safely",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "missing URL fragment shows failure state",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "invalid fragment ID cannot replace content",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "missing project returns 404 fragment",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "mobile viewport and RTL",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "firefox",
+      "name": "no uncaught JS exception",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "design gallery served with shared CSS",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "SSR and strict CSP",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "linked project fragments",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "tabs and managed focus",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "GET search",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "POST notes saves and escapes HTML",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "CSRF rejects forged write",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "foreign Origin rejected with valid CSRF token",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "strict CSP blocks injected inline script",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "explicit foreign origin rejected",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "non-ASCII CSRF rejected without server error",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "server validation returns 422 fragment",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "contract mismatch is rejected safely",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "missing URL fragment shows failure state",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "invalid fragment ID cannot replace content",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "missing project returns 404 fragment",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "mobile viewport and RTL",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "node",
+      "browser": "webkit",
+      "name": "no uncaught JS exception",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "design gallery served with shared CSS",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "SSR and strict CSP",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "linked project fragments",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "tabs and managed focus",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "GET search",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "POST notes saves and escapes HTML",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "CSRF rejects forged write",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "foreign Origin rejected with valid CSRF token",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "strict CSP blocks injected inline script",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "explicit foreign origin rejected",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "non-ASCII CSRF rejected without server error",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "server validation returns 422 fragment",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "contract mismatch is rejected safely",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "missing URL fragment shows failure state",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "invalid fragment ID cannot replace content",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "missing project returns 404 fragment",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "mobile viewport and RTL",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "chromium",
+      "name": "no uncaught JS exception",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "design gallery served with shared CSS",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "SSR and strict CSP",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "linked project fragments",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "tabs and managed focus",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "GET search",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "POST notes saves and escapes HTML",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "CSRF rejects forged write",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "foreign Origin rejected with valid CSRF token",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "strict CSP blocks injected inline script",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "explicit foreign origin rejected",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "non-ASCII CSRF rejected without server error",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "server validation returns 422 fragment",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "contract mismatch is rejected safely",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "missing URL fragment shows failure state",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "invalid fragment ID cannot replace content",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "missing project returns 404 fragment",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "mobile viewport and RTL",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "firefox",
+      "name": "no uncaught JS exception",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "design gallery served with shared CSS",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "SSR and strict CSP",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "linked project fragments",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "tabs and managed focus",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "GET search",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "POST notes saves and escapes HTML",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "CSRF rejects forged write",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "foreign Origin rejected with valid CSRF token",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "strict CSP blocks injected inline script",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "explicit foreign origin rejected",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "non-ASCII CSRF rejected without server error",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "server validation returns 422 fragment",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "contract mismatch is rejected safely",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "missing URL fragment shows failure state",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "invalid fragment ID cannot replace content",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "missing project returns 404 fragment",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "mobile viewport and RTL",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "backend": "python",
+      "browser": "webkit",
+      "name": "no uncaught JS exception",
+      "status": "PASS",
+      "error": ""
+    }
+  ],
+  "counts": {
+    "pass": 108,
+    "fail": 0
+  },
+  "versions": {
+    "chromium": "151.0.7922.34",
+    "firefox": "153.0",
+    "webkit": "26.5"
+  }
+}
