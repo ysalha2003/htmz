@@ -23,7 +23,7 @@ async function handler(req,res,crossPort){const u=new URL(req.url,'http://localh
  if(p==='/redirect')return send(res,'',302,{'Location':'/frag?name=redirected'});
  if(p==='/delay'){await new Promise(ok=>setTimeout(ok,Math.min(1500,Math.max(0,Number(u.searchParams.get('ms'))||0))));return send(res,'<div id="slot">'+esc(u.searchParams.get('name')||'delay')+'</div>');}
  if(p==='/cross')return send(res,'<div id="slot">cross-origin content</div>');
- if(p==='/csp')return send(res,documentPage(u.searchParams.get('variant')||'original','<div id="slot">CSP</div>'),200,{'Content-Security-Policy':"script-src 'self'"}); 
+ if(p==='/csp')return send(res,documentPage(u.searchParams.get('variant')||'original','<div id="slot">CSP</div>'),200,{'Content-Security-Policy':"script-src 'self'"});
  if(p==='/demo')return send(res,demo(u.searchParams.get('variant')||'safe'));
  if(p==='/demo/list')return send(res,list(u.searchParams.get('q')||''));
  if(p==='/demo/project')return send(res,detail(u.searchParams.get('id')||'p1'));
