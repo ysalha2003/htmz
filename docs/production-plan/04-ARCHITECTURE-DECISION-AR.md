@@ -82,11 +82,11 @@
 </div>
 
 ```html
-<!-- رابط عادي؛ بلا JavaScript يفتح صفحة /projects/P-102 كاملة.
-     مع طبقة التحسين يُستبدل العنصر #panel فقط ويُحدَّث العنوان. -->
+<!-- Plain link. Without JavaScript it opens /projects/P-102 as a full page.
+     With the enhancement layer only #panel is replaced and the URL is updated. -->
 <a href="/projects/P-102" data-target="#panel">تطوير مقر الإدارة</a>
 
-<!-- نموذج عادي؛ POST ثم إعادة توجيه (PRG) تعمل أصليًا ومع التحسين. -->
+<!-- Plain form. POST then redirect (PRG) works natively and with the enhancement. -->
 <form method="post" action="/projects/P-102/notes" data-target="#panel">
   <input type="hidden" name="_csrf" value="…">
   <textarea name="note" required maxlength="300"></textarea>
