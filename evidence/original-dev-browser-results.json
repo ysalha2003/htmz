@@ -1,0 +1,442 @@
+{
+  "variant": "dev",
+  "started": "2026-11-05T04:05:18.061Z",
+  "upstreamSha": "941cd22426e138e1897f9f3bc78992066c079cf6",
+  "browsers": {
+    "chromium": {
+      "version": "140.0.7339.208",
+      "launchError": null,
+      "tests": [
+        {
+          "name": "fragment swap",
+          "status": "PASS",
+          "elapsedMs": 118,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "independent zones",
+          "status": "PASS",
+          "elapsedMs": 157,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "GET form",
+          "status": "PASS",
+          "elapsedMs": 102,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "POST form",
+          "status": "PASS",
+          "elapsedMs": 97,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "repeat requests",
+          "status": "PASS",
+          "elapsedMs": 80,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "missing target",
+          "status": "PASS",
+          "elapsedMs": 225,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "no URL hash",
+          "status": "PASS",
+          "elapsedMs": 243,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "invalid selector does not crash",
+          "status": "FAIL",
+          "elapsedMs": 221,
+          "failure": "Uncaught error: Failed to execute 'querySelector' on 'Document': '#%5B' is not a valid selector.",
+          "pageErrors": [
+            "Failed to execute 'querySelector' on 'Document': '#%5B' is not a valid selector."
+          ]
+        },
+        {
+          "name": "empty response deletes zone",
+          "status": "PASS",
+          "elapsedMs": 69,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "HTTP 500 error markup",
+          "status": "PASS",
+          "elapsedMs": 60,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "server redirect",
+          "status": "PASS",
+          "elapsedMs": 56,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "rapid navigation",
+          "status": "PASS",
+          "elapsedMs": 623,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "transplanted controls",
+          "status": "PASS",
+          "elapsedMs": 97,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "parent location remains unchanged",
+          "status": "PASS",
+          "elapsedMs": 81,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "keyboard Enter",
+          "status": "PASS",
+          "elapsedMs": 105,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "unrelated focused input retained",
+          "status": "PASS",
+          "elapsedMs": 95,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "cross-origin navigation does not crash",
+          "status": "FAIL",
+          "elapsedMs": 500,
+          "failure": "Uncaught error: Failed to read a named property 'hash' from 'Location': Blocked a frame with origin \"http://127.0.0.1:59388\" from accessing a cross-origin frame.",
+          "pageErrors": [
+            "Failed to read a named property 'hash' from 'Location': Blocked a frame with origin \"http://127.0.0.1:59388\" from accessing a cross-origin frame."
+          ]
+        },
+        {
+          "name": "mobile viewport",
+          "status": "PASS",
+          "elapsedMs": 102,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "CSP limitation characterized",
+          "status": "PASS",
+          "elapsedMs": 283,
+          "failure": "",
+          "pageErrors": []
+        }
+      ]
+    },
+    "firefox": {
+      "version": "153.0",
+      "launchError": null,
+      "tests": [
+        {
+          "name": "fragment swap",
+          "status": "PASS",
+          "elapsedMs": 314,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "independent zones",
+          "status": "PASS",
+          "elapsedMs": 162,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "GET form",
+          "status": "PASS",
+          "elapsedMs": 219,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "POST form",
+          "status": "PASS",
+          "elapsedMs": 143,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "repeat requests",
+          "status": "PASS",
+          "elapsedMs": 98,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "missing target",
+          "status": "PASS",
+          "elapsedMs": 280,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "no URL hash",
+          "status": "PASS",
+          "elapsedMs": 270,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "invalid selector does not crash",
+          "status": "FAIL",
+          "elapsedMs": 288,
+          "failure": "Uncaught error: Document.querySelector: '#%5B' is not a valid selector",
+          "pageErrors": [
+            "Document.querySelector: '#%5B' is not a valid selector"
+          ]
+        },
+        {
+          "name": "empty response deletes zone",
+          "status": "PASS",
+          "elapsedMs": 101,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "HTTP 500 error markup",
+          "status": "PASS",
+          "elapsedMs": 110,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "server redirect",
+          "status": "PASS",
+          "elapsedMs": 103,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "rapid navigation",
+          "status": "PASS",
+          "elapsedMs": 642,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "transplanted controls",
+          "status": "PASS",
+          "elapsedMs": 119,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "parent location remains unchanged",
+          "status": "PASS",
+          "elapsedMs": 93,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "keyboard Enter",
+          "status": "PASS",
+          "elapsedMs": 133,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "unrelated focused input retained",
+          "status": "PASS",
+          "elapsedMs": 122,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "cross-origin navigation does not crash",
+          "status": "FAIL",
+          "elapsedMs": 508,
+          "failure": "Uncaught error: Permission denied to access property \"hash\" on cross-origin object",
+          "pageErrors": [
+            "Permission denied to access property \"hash\" on cross-origin object"
+          ]
+        },
+        {
+          "name": "mobile viewport",
+          "status": "PASS",
+          "elapsedMs": 144,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "CSP limitation characterized",
+          "status": "PASS",
+          "elapsedMs": 321,
+          "failure": "",
+          "pageErrors": []
+        }
+      ]
+    },
+    "webkit": {
+      "version": "26.5",
+      "launchError": null,
+      "tests": [
+        {
+          "name": "fragment swap",
+          "status": "PASS",
+          "elapsedMs": 47,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "independent zones",
+          "status": "PASS",
+          "elapsedMs": 110,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "GET form",
+          "status": "PASS",
+          "elapsedMs": 180,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "POST form",
+          "status": "PASS",
+          "elapsedMs": 178,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "repeat requests",
+          "status": "PASS",
+          "elapsedMs": 70,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "missing target",
+          "status": "PASS",
+          "elapsedMs": 222,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "no URL hash",
+          "status": "PASS",
+          "elapsedMs": 209,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "invalid selector does not crash",
+          "status": "FAIL",
+          "elapsedMs": 216,
+          "failure": "Uncaught error: '#%5B' is not a valid selector.",
+          "pageErrors": [
+            "'#%5B' is not a valid selector."
+          ]
+        },
+        {
+          "name": "empty response deletes zone",
+          "status": "PASS",
+          "elapsedMs": 39,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "HTTP 500 error markup",
+          "status": "PASS",
+          "elapsedMs": 52,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "server redirect",
+          "status": "PASS",
+          "elapsedMs": 54,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "rapid navigation",
+          "status": "PASS",
+          "elapsedMs": 606,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "transplanted controls",
+          "status": "PASS",
+          "elapsedMs": 66,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "parent location remains unchanged",
+          "status": "PASS",
+          "elapsedMs": 48,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "keyboard Enter",
+          "status": "PASS",
+          "elapsedMs": 84,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "unrelated focused input retained",
+          "status": "PASS",
+          "elapsedMs": 77,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "cross-origin navigation does not crash",
+          "status": "FAIL",
+          "elapsedMs": 449,
+          "failure": "Uncaught error: Blocked a frame with origin \"http://127.0.0.1:59388\" from accessing a cross-origin frame. Protocols, domains, and ports must match.",
+          "pageErrors": [
+            "Blocked a frame with origin \"http://127.0.0.1:59388\" from accessing a cross-origin frame. Protocols, domains, and ports must match."
+          ]
+        },
+        {
+          "name": "mobile viewport",
+          "status": "PASS",
+          "elapsedMs": 82,
+          "failure": "",
+          "pageErrors": []
+        },
+        {
+          "name": "CSP limitation characterized",
+          "status": "PASS",
+          "elapsedMs": 238,
+          "failure": "",
+          "pageErrors": []
+        }
+      ]
+    }
+  },
+  "counts": {
+    "PASS": 51,
+    "FAIL": 6,
+    "ENVIRONMENT": 0
+  },
+  "finished": "2026-11-05T04:05:40.391Z"
+}

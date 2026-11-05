@@ -1,0 +1,14 @@
+{
+  "name": "htmz-engineering-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "baseline": "node tests/run.mjs --variant=original",
+    "test": "node tests/run.mjs --variant=safe",
+    "demo": "node tools/server.mjs",
+    "benchmark": "node benchmarks/run.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
